@@ -26,8 +26,14 @@ header {
     color: white;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 40px;
+    height: 100px;
+    padding: 10px;
 }
 
 .header-right {
