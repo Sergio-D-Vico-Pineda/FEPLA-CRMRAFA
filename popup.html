@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEPLA CRM</title>
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/popup.css">
 </head>
 <body>
     <header>
@@ -22,29 +23,13 @@
             <button class="button">Perfil</button>
         </div>
     </header>
-    <main>
-        <nav class="menu">
-            <h2>Menú</h2>
-            <ul>
-                <li><button class="button2">Empresas</button></li>
-                <li><button class="button2">Alumnos</button></li>
-                <li><button class="button2">Prácticas</button></li>
-            </ul>
-        </nav>
-        <section class="panel">
-            <h1>Panel Inicial</h1>
-            <p>Bienvenido a nuestra página web. Aquí encontrarás toda la información que necesitas sobre nuestros productos y servicios.</p>
-            <p>Explora nuestro sitio para descubrir más sobre lo que ofrecemos y cómo podemos ayudarte.</p>
-        </section>
-        <aside class="tutorial">
-            <h2>Tutorial</h2>
-            <ol>
-                <li>Explora el menú para navegar por las diferentes secciones de nuestro sitio.</li>
-                <li>Lee la información en el panel central para obtener una visión general de nuestros servicios.</li>
-                <li>Si necesitas ayuda, sigue los pasos de este tutorial o contacta con nuestro equipo de soporte.</li>
-                <li>Personaliza tu experiencia utilizando el botón de modo oscuro en la esquina superior derecha.</li>
-            </ol>
-        </aside>
-    </main>
+        <main>
+            <button id="abrirPopup">Pop-up</button>
+            <div id="popup" class="popup">
+            <div class="popup-contenido">
+            <span id="cerrarPopup" class="cerrar">&times;</span>
+        </main>
+    </div>
+    <script src="./script/main.js"></script>
 </body>
 </html>
