@@ -1,5 +1,5 @@
 .popup {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,24 +8,31 @@
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
 }
+
 
 /* Contenedor del contenido del pop-up */
 .popup-contenido {
+    position: relative;
     background: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-content: end center;
+    padding: 20px;
     width: 300px;
-    text-align: center;
+    aspect-ratio: 2/1;
 }
 
 /* Botón para cerrar */
 .cerrar {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+    background-color: rgb(184, 184, 184);
+    padding: 11px 5px;
+    border-radius: 5px;
+    line-height: 0;
 }
